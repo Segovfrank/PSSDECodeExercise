@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/driverListFragment">
+    <fragment
+        android:id="@+id/driverListFragment"
+        android:name="com.segov.pssdecodeexercise.ui.screens.DriverListFragment"
+        android:label="fragment_driver_list"
+        tools:layout="@layout/fragment_driver_list" >
+        <action
+            android:id="@+id/action_driverListFragment_to_driverDetailFragment"
+            app:destination="@id/driverDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverDetailFragment"
+        android:name="com.segov.pssdecodeexercise.ui.screens.DriverDetailFragment"
+        android:label="fragment_driver_detail"
+        tools:layout="@layout/fragment_driver_detail" >
+        <argument
+            android:name="driverAndShipment"
+            app:argType="com.segov.pssdecodeexercise.data.DriverAndSuitability" />
+    </fragment>
+</navigation>
