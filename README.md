@@ -1,11 +1,12 @@
 PS SDE Code Exercise
 ==================
 
-**Building**
+**Building & Running**
 
+- You can just clone this repo.
 - App is using latest AGP, so JDK 17 is required.
 - Use Android Studio Embedded JDK for a quick setup. Go to: File -> Settings -> Build, Execution,
-  Deployment -> Build Tools -> Gradle -> Gradle JDK (Embedded JDK 17.0.6)
+  Deployment -> Build Tools -> Gradle -> Gradle JDK (Embedded JDK 17.0.6).
 
 **App Design**
 
